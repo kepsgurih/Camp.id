@@ -54,7 +54,7 @@
               </div>
             </div>
             <footer class="card-footer">
-              <a href="#" class="card-footer-item">Edit Profile</a>
+              <a href="/profile" class="card-footer-item">Edit Profile</a>
             </footer>
           </div>
 
@@ -85,12 +85,16 @@
           return{
             user: true,
             email: localStorage.getItem('email'),
-            fullName: localStorage.getItem('fullName')
+            fullName: localStorage.getItem('fullName'),
+            phoneNo: null
           }
         }
         else{
           return{
-            phoneNo: null
+            user: true,
+            email: localStorage.getItem('email'),
+            fullName: localStorage.getItem('fullName'),
+            phoneNo: localStorage.getItem('phoneNo')
           }
         }
       }

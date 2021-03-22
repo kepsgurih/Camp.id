@@ -26,7 +26,7 @@
         menu4.0
       </b-navbar-item>
       <b-navbar-dropdown label="Profile" v-if="IsLogin">
-        <b-navbar-item href="#">
+        <b-navbar-item href="/profile">
           Profile Saya
         </b-navbar-item>
         <b-navbar-item href="#">
